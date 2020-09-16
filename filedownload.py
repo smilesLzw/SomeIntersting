@@ -66,7 +66,7 @@ if __name__ == '__main__':
     for url in urls:
         q.put(url)
 
-    # 启动五个线程（可改为线程池）
+    # 启动两个个线程（可改为线程池）
     for i in range(2):
         t = DownloadThread(q)
         t.setDaemon(True)
